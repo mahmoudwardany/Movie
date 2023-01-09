@@ -12,9 +12,9 @@ const onsearch=(word)=>{
       <Container>
         <Row className="pt-2 ">
           <Col xs="2" lg="1">
-            <a href="/">
+            <Link to="/">
               <img className="logo" src={logo} alt="dfs" />
-            </a>
+            </Link>
           </Col>
           <Col xs="10" lg="11" className=" d-flex align-items-center">
             <div className="search  w-100">
