@@ -1,5 +1,5 @@
 {
-  "homepage": "http://mahmoudwardany.github.io/movie",
+  "short_name":"movies App",
   "name": "movie",
   "version": "0.1.0",
   "private": true,
