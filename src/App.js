@@ -2,7 +2,6 @@ import './App.css';
 import Navs from './components/Navs';
 import { Container } from 'react-bootstrap';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import MovieList from './components/MovieList';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -37,10 +36,8 @@ function App() {
     <Container>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MovieList movies={movies} getPage={getPage} pageCount={pageCount} />} />
-
+          <Route path="/movie" element={<MovieList movies={movies} getPage={getPage} pageCount={pageCount} />} />
           <Route path="/movie/:id" element={<MovieDetails />} />
-
         </Routes>
       </BrowserRouter>
     </Container>
