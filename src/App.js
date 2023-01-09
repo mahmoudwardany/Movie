@@ -36,7 +36,7 @@ function App() {
     <Container>
       <BrowserRouter>
         <Routes>
-          <Route path="/movie" element={<MovieList movies={movies} getPage={getPage} pageCount={pageCount} />} />
+          <Route path="/" element={<MovieList movies={movies} getPage={getPage} pageCount={pageCount} />} />
           <Route path="/movie/:id" element={<MovieDetails />} />
         </Routes>
       </BrowserRouter>
