@@ -7,7 +7,7 @@ const MoviesList = ({ movies, getPage, pageCount }) => {
     <Row className="mt-3">
       {movies.length >= 1 ? (movies.map((mov) => {
         return (<CardMovie key={mov.id} mov={mov} />)
-      })) : <h2 className="text-center p-5">لا يوجد افلام...</h2>}
+      })) : <h2 className="text-center p-5">Loading ....</h2>}
       {movies.length >= 1 ?(
           <Paginat getPage={getPage} pageCount={pageCount}/>
       ):null
